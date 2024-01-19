@@ -1,3 +1,16 @@
+import { Container, Header, SocialsList } from "./components";
+import styles from "./App.module.scss";
+import data from "./data.json";
+import { useState } from "react";
+
 export default function App() {
-  return <div>App</div>;
+  const [person, setPerson] = useState(data.person);
+  return (
+    <main className={styles.wrapper}>
+      <Container>
+        <Header person={person} />
+        <SocialsList socials={person.socials} />
+      </Container>
+    </main>
+  );
 }

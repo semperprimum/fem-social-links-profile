@@ -1,0 +1,23 @@
+.headerWrapper {
+    text-align: center;
+    display   : grid;
+    gap       : 1.5rem;
+}
+
+.image {
+    max-width    : 5.5rem;
+    max-height   : 5.5rem;
+    margin-inline: auto;
+    border-radius: 50%;
+}
+
+.name {
+    margin-bottom: 0.25rem;
+    font-weight  : var(--fw-semibold);
+    font-size    : var(--fs-l);
+}
+
+.location {
+    font-weight: var(--fw-bold);
+    color      : var(--clr-primary);
+}

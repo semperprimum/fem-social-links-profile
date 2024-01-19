@@ -1,4 +1,4 @@
-// Reset START
+//! Reset START
 /* Box sizing rules */
 *,
 *::before,
@@ -80,7 +80,7 @@ select {
     }
 }
 
-// Reset END
+//! Reset END
 
 :root {
     --clr-neutral-900: hsla(0, 0%, 8%, 1);
@@ -105,4 +105,7 @@ body {
     font-size       : var(--fs-m);
     font-weight     : var(--fw-regular);
     font-family     : var(--font-main), sans-serif;
+
+    display    : grid;
+    align-items: center;
 }
