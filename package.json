@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "@fontsource-variable/inter": "^5.0.16",
+    "@hello-pangea/dnd": "^16.5.0",
     "react": "^18.2.0",
+    "react-beautiful-dnd": "^13.1.1",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {

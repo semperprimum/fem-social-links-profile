@@ -9,7 +9,11 @@ export default function App() {
     <main className={styles.wrapper}>
       <Container>
         <Header person={person} />
-        <SocialsList socials={person.socials} />
+        <SocialsList
+          socials={person.socials}
+          setPerson={setPerson}
+          person={person}
+        />
       </Container>
     </main>
   );

@@ -1,9 +1,17 @@
 import styles from "./styles/Socials.module.scss";
 
-export function SocialsItem({ social }) {
+export function SocialsItem({ social, provided }) {
   return (
-    <a href={social.link}>
-      <li className={styles.item}>{social.name}</li>
+    <a
+      className={styles.link}
+      href={social.link}
+      {...provided.draggableProps}
+      {...provided.dragHandleProps}
+      ref={provided.innerRef}
+    >
+      <li className={styles.item}>
+        <p>{social.name}</p>
+      </li>
     </a>
   );
 }
