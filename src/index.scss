@@ -81,3 +81,28 @@ select {
 }
 
 // Reset END
+
+:root {
+    --clr-neutral-900: hsla(0, 0%, 8%, 1);
+    --clr-neutral-800: hsla(0, 0%, 12%, 1);
+    --clr-neutral-700: hsla(0, 0%, 20%, 1);
+    --clr-neutral-100: hsla(0, 0%, 100%, 1);
+    --clr-primary    : hsla(75, 94%, 57%, 1);
+
+    --fw-regular : 400;
+    --fw-semibold: 600;
+    --fw-bold    : 700;
+
+    --fs-m: 0.875rem;
+    --fs-l: 1.5rem;
+
+    --font-main: "Inter Variable";
+}
+
+body {
+    background-color: var(--clr-neutral-900);
+    color           : var(--clr-neutral-100);
+    font-size       : var(--fs-m);
+    font-weight     : var(--fw-regular);
+    font-family     : var(--font-main), sans-serif;
+}
