@@ -1,17 +1,18 @@
 .list {
-    padding      : 0;
-    margin       : 0;
-    margin-top   : 1.5rem;
-    // display   : grid;
-    // gap       : 1rem;
+    padding   : 0;
+    margin    : 0;
+    margin-top: 1.5rem;
 }
 
 .item {
+    position        : relative;
     padding         : 0.75rem;
     background-color: var(--clr-neutral-700);
     border-radius   : 0.5rem;
     text-align      : center;
     font-weight     : var(--fw-bold);
+    display         : block;
+    margin-top      : 1rem;
 
     @media only screen and (min-width: 60em) {
         transition: background-color 150ms ease, color 150ms ease;
@@ -23,7 +24,14 @@
     }
 }
 
-.link {
-    display   : block;
-    margin-top: 1rem;
+.icon {
+    opacity   : .5;
+    max-width : 1rem;
+    max-height: 1rem;
+    fill      : currentColor;
+    position  : absolute;
+    left      : 1rem;
+    top       : 50%;
+    transform : translateY(-50%);
+
 }
